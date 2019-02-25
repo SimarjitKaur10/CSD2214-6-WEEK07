@@ -4,9 +4,38 @@
     <meta charset="utf-8" />
     <title>C0741324_week7_Web_Dev</title>
     <link href="css/default.css" rel="stylesheet" />
+    <script>
+        function addition() {
+            var i=117;
+            var sum=0;
+            for (i = 117; i >= 11; i -= 8)
+            {
+                document.write("The value of i1 is ", i,"<br>");
+                sum += i;   
+                document.write("The value of sum1 is ", sum,"<br>");
+
+                               
+            }
+            document.write("<br><br>The sum using for loop is ", sum,"<br><br>");
+            var j = 117;
+            var sum2 = 0;
+            while (j >= 11)
+            {
+                document.write("The value of j is ", j, "<br>");
+                sum2 += j;
+                document.write("The value of sum2 is ", sum2, "<br>");
+                j -= 8;
+            }
+            document.write("<br><br>The sum using while loop is ", sum2,"<br><br>");
+
+        }
+    </script>
 </head>
 <body>
-    <div>Content goes here!</div>
-    <script src="js/main.js"></script>
+    <div id="div">
+
+    <input type="button" id="create" value="Calculate the sums" onclick="addition();" />
+
+    </div>
 </body>
 </html>
